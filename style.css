@@ -1,0 +1,499 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: hsl(257, 7%, 63%);
+}
+
+h1, h2, h3 {
+    color: hsl(260, 8%, 14%);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-list {
+    position: fixed;
+    background-color: hsl(257, 27%, 26%);
+    z-index: 2;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    top: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.show-list {
+    top: 7.5%;
+}
+
+.list-item {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-list a{
+    color: white;
+    font-size: 140%;
+}
+
+#sign-up {
+    background-color: hsl(180, 66%, 49%);
+    padding: 1rem 4rem 1rem 4rem;
+    border-radius: 2rem;
+}
+
+.header {
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#ham-btn {
+    color: hsl(0, 0%, 75%);
+}
+
+.intro {
+    overflow-x: hidden;
+    padding-top: 2rem;
+}
+
+.intro-img {
+    width: 125%;
+    margin-left: 5%;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+.intro-head {
+    font-size: 230%;
+}
+
+.start, .shorten {
+    color: white;
+    font-weight: bold;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 18px;
+}
+
+.features {
+    background-color: hsl(0, 0%, 75%);
+    position: relative;
+}
+
+.shortener {
+    background-color: hsl(257, 27%, 26%);
+    background-image: url("./images/bg-shorten-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    width: 80%;
+    margin: auto;
+    border-radius: .75rem;
+    margin-top: 10rem;
+    transform: translateY(-50%);
+}
+
+#url-input, .shorten {
+    width: 100%;
+    padding: 1rem;
+    font-size: 18px;
+    border: none;
+    border-radius: .5rem;
+}
+
+.shorten {
+    margin-top: 1rem;
+}
+
+.advanced {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.advanced p {
+    color: black;
+}
+
+.service-house {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.service {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.img-holder {
+    background-color: hsl(257, 27%, 26%);
+    padding: 1rem;
+    border-radius: 100%;
+    width: 20%;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+.line, .d-line {
+    background-color: cyan;
+    width: .35rem;
+    margin: auto;
+    min-height: 5rem;
+}
+
+.d-line {
+    min-height: .25rem;
+    min-width: 2rem;
+}
+
+.boost {
+    background-image: url("./images/bg-boost-mobile.svg");
+    background-color: hsl(257, 27%, 26%);
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.boost h2{
+    color: white;
+}
+
+.footer {
+    background-color: hsl(260, 8%, 14%);
+    padding: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.footer h3{
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.footer-link li{
+    margin-top: 1rem;
+}
+
+.f-link {
+    color: hsl(257, 7%, 63%);
+}
+
+.footer-features , .resources, .company{
+    margin-top: 3rem;
+}
+
+.socials {
+    padding-top: 3rem;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fab:hover, .f-link:hover {
+    transition: all .25s ease-in-out;
+    color: hsl(180, 66%, 49%);
+}
+
+.shortened {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: black;
+    width: 80%;
+    margin: auto;
+    /* display: flex; */
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.copy {
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    font-size: 18px;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    border-radius: .75rem;
+    margin-top: 1rem;
+}
+
+.full-link, .short-link {
+    padding-bottom: .5rem;
+    cursor: pointer;
+}
+
+.short-link {
+    color: hsl(180, 66%, 49%);
+}
+
+@media (min-width:650px) {
+    .navbar {
+        width: 80%;
+        margin: auto;
+    }
+
+    .intro-img {
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .intro-text {
+        width: 60%;
+        margin: auto;
+    }
+
+    .shortener {
+        width: 65%;
+    }
+
+    .advanced {
+        width: 65%;
+    }
+
+    .service-house {
+        width: 70%;
+        margin: auto;
+        margin-top: 4rem;
+    }
+
+    .img-holder {
+        width: 15%;
+    }
+
+    .boost {
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .socials {
+        width: 30%;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer-features , .resources, .company{
+        margin-top: 0rem;
+        width: 23%;
+    }
+
+    .socials {
+        width: 23%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1rem;
+        margin: 0;
+    }
+}
+
+@media (min-width:950px) {
+
+    .container {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    .nav-list {
+        position: static;;
+        background-color: transparent;
+        width: auto;
+        left: auto;
+        right: auto;
+        top: 100%;
+        text-align: left;
+        padding: 0;
+        border-radius: 0;
+        display: flex;
+    }
+
+    .list-item {
+        margin-left: 2rem;
+        font-size: 16px;
+    }
+
+    .shift {
+        margin-left: 1rem;
+    }
+
+    .nav-list a{
+        color: black;
+        font-size: 140%;
+    }
+
+    .nav-list hr{
+       display: none;
+    }
+
+    .nav-link:hover {
+        color: hsl(257, 7%, 63%);
+    }
+
+    #sign-up {
+        color: white;
+    }
+
+    #sign-up:hover {
+        opacity: .5;
+        transition: all .25s ease-in-out;
+    }
+
+    #ham-btn {
+        display: none;
+    }
+
+    #sign-up {
+        background-color: hsl(180, 66%, 49%);
+        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 2rem;
+    }
+    
+    .intro {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .intro-text {
+        margin-left: 10%;
+        text-align: left;
+    }
+
+    .intro-img {
+        width: 50%;
+        transform: translateX(10%);
+    }
+
+    #url-input {
+        width: 63%;
+    }
+
+    .shorten {
+        width: 30%;
+        margin-top: 0;
+    }
+
+    .advanced {
+        width: 30%;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .service-house {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-top: 4rem;
+        padding-bottom: 10rem;
+    }
+
+    .service {
+        width: 30%;
+        text-align: left;
+    }
+
+    .img-holder {
+        text-align: center;
+        width: 15%;
+        margin-left: 1rem;
+    }
+
+    .second {
+        transform: translateY(15%);
+    }
+
+    .service:last-child {
+        transform: translateY(30%);
+    }
+
+    .boost {
+        background-image: url(./images/bg-boost-desktop.svg);
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .f-logo {
+        margin-top: 1rem;
+    }
+
+    .footer-content {
+        width: 70%;
+    }
+
+    .shortened {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 1rem;
+        color: black;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+    }
+
+    .shortened hr {
+        display: none;
+    }
+
+    .results {
+        display: flex;
+        align-items: center;
+    }
+
+    .copy {
+        margin: 0;
+        margin-left: 1rem;
+    }
+}
